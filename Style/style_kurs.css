@@ -4,7 +4,9 @@
 	max-height: 320px;
 	max-width: 320px;
 }
-
+img{
+  border-radius: 10px;
+}
 body{
 	background-color: #333;
 	/*background-image: url(fon.jpg);*/

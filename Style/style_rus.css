@@ -25,7 +25,9 @@
   background-color: #018af9;
   color: white;
 }
-
+img{
+  border-radius: 10px;
+}
 @media(max-width: 991px){
 img{
   left: 0;

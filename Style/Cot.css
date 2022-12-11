@@ -42,7 +42,8 @@ body{
 
 @media(max-width: 768px){
 	img{
-		left: 0;
+		left: 0px;
+    border-radius: 10px;
 		top: 0;
 		width: 100%;
 		height: auto;
@@ -76,8 +77,18 @@ body{
     
     @media  (max-width: 991px){
       .topnav{
-          opacity: 0;
+          
+          display: none;
       }
+      
+    }
+    img{
+
+      border-radius: 10px;
+
+    }
+    cite{
+      margin-left: 5px;
     }
     
     

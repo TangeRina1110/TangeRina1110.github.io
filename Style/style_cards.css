@@ -70,7 +70,7 @@ body
 }
 
 .container .cards .content p{ color: #666;}
-.container .cards img{ width: 70%; height: auto; text-align: center;}
+.container .cards img{ width: 70%; height: auto; text-align: center; border-radius: 10px;}
 .container .cards .content a{
     position: relative;
     display: inline-block;

@@ -13,7 +13,9 @@
   text-decoration: none;
   font-size: 17px;
 }
-
+img{
+  border-radius: 10px;
+}
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #6380fe;
@@ -42,8 +44,8 @@ position: relative;
 }
 
 @media  (max-width: 991px){
-  .topnav{
-      opacity: 0;
+  .topnav{    
+      display: none;
   }
 }
 

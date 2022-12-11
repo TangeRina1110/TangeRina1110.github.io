@@ -12,6 +12,9 @@ body{
   align-items: end;
   min-height: 100vh;
 }
+img{
+  border-radius: 10px;
+}
 .topnav {
     background-color: #333;
     overflow: hidden;
