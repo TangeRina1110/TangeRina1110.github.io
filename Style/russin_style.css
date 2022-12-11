@@ -62,9 +62,11 @@ body{
 	background-attachment: fixed;
 }
 @media  (max-width: 991px){
-    .topnav{
-        opacity: 0;
-    }
+  .topnav{
+      
+      display: none;
+  }
+  
 }
 
 

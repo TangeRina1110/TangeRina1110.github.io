@@ -77,10 +77,11 @@ body{
     
     @media  (max-width: 991px){
       .topnav{
-          opacity: 0;
+          
+          display: none;
       }
+      
     }
-    
     
     /* скрываем чекбокс */
     #menu__toggle {
