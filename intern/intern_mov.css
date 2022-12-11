@@ -1,0 +1,325 @@
+@import url('http://fonts.googleapis.com/css&family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{margin:0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+box-sizing:border-box;
+color:#fff;
+}
+body{
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  min-height: 100vh;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #6380fe;
+    color: black;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #018af9;
+    color: white;
+}
+
+@media(max-width: 768px){
+	img{
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: auto;
+	}
+	li{
+	max-width: 750px;
+	font-size: 14px;
+	position: relative;
+    }
+}
+body{
+    background-color: #333;
+	/*background-image: url(fon.jpg);*/
+	background-attachment: fixed;
+}
+@media(max-width: 991px){
+    img{
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: auto;
+          
+    }
+    li{
+    max-width: 750px;
+    font-size: 14px;
+    position: relative;
+    }
+    }
+    
+    @media  (max-width: 991px){
+      .topnav{
+          opacity: 0;
+      }
+    }
+    
+    
+    /* скрываем чекбокс */
+    #menu__toggle {
+      opacity: 0;
+    }
+    
+    .menu__box { display: none; }
+    
+    
+    @media  (max-width: 991px)  {
+      main{
+          padding:0;
+      }
+      .menu{
+          display: none;
+      }
+    /* стилизуем кнопку */
+    .menu__btn {
+      display: flex; /* используем flex для центрирования содержимого */
+      align-items: center;  /* центрируем содержимое кнопки */
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 6;
+    }
+    /* добавляем "гамбургер" */
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+    /* контейнер меню */
+    .menu__box {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      
+      padding: 50px 0;
+      list-style: none;
+      align-items: center;
+      background-color: #3044a5;
+      box-shadow: 5px 0px 6px whitesmoke;
+      z-index: 5;
+    }
+    /* элементы меню */
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: whitesmoke;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      
+    }
+    .menu__item:hover {
+      background-color: #CFD8DC;
+    }
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      left: 0;
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      transition-duration: .25s;
+    }
+    .menu__box {
+      transition-duration: .25s;
+    }
+    .menu__item {
+      transition-duration: .25s;
+    }
+    }
+  
+
+    footer{
+        position: relative;
+        width:100%;
+        height: auto;
+        box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+        padding:50px 100px; 
+        padding-left: 20px;
+        padding-right: 20px;
+        background: #3044a5;
+      }
+      footer .container{
+          width:100%;
+          display:grid;
+          grid-template-columns: 2fr 1fr 1fr 1fr;
+          grid-gap: 20px;
+        }
+        footer .container .sec h2{
+          position: relative;
+          color:#fff;
+          font-weight: 500;
+          margin-bottom: 15px;
+        }
+        footer .container .sec h2::before
+      {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #ffeb3b;
+      }
+      footer .container .sec p
+      {
+        color: #fff;
+      }
+      .sci
+      {
+        margin-top: 20px;
+        display:grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-gap: 10px;
+      }
+      .sci li {
+        list-style: none;
+      }
+      .sci li a{
+        display: inline-block;
+        width: 48px;
+        height: 48px;
+        background: #3e56cb;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 4px;
+      }
+      .sci li a:hover{
+          background: #6380fe;
+      }
+      .sci li a .fa{
+          color: #fff;
+          font-size: 20px;
+      }
+      .quicklinks
+      {
+          position: relative;
+      }
+      .quicklinks li{
+          list-style: none;
+      }
+      .quicklinks li a{
+          color: #f7f7f7;
+          text-decoration: none;
+          margin-bottom: 10px;
+          display: inline-block;
+      }
+      .quicklinks li a:hover
+      {
+          color: #ffeb3b;
+      }
+      .info
+      {
+          position: inherit;
+      }
+      .info li
+      {
+          display: grid;
+          grid-template-columns: 30px 1fr;
+          margin-bottom: 16px;
+      }
+      
+      .info li span
+      {
+          color: #fff;
+      }
+      .info a
+      {
+          color: #f7f7f7;
+          text-decoration: none;
+      }
+      .info a:hover{
+          color:#ffeb3b;
+      }
+      .copyrightText
+      {
+          width:100%;
+          background: #1f3389;
+          padding: 8px 100px;
+          text-align: center;
+          color: #fff;
+      }
+      @media (max-width: 991px)
+      {
+          footer
+          {
+              padding: 40px;
+          }
+          footer .container
+          {
+              grid-template-columns: repeat(2, 1fr);
+          }
+          .copyrightText
+          {
+              width: 100%;
+              background: #1f3389;
+              padding:  8px 40px;
+          }
+      }
+      @media(max-width:768px)
+      {
+          footer .container
+          {
+              grid-template-columns: repeat(1,1fr);
+          }
+      
+      }
