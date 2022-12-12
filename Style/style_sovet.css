@@ -184,7 +184,11 @@ background-attachment: fixed;
 @media (min-width: 300px)  and (max-width:991px){  /*надпись на картинке*/
   .gallery div{margin: 0;}
   .gallery {padding: 0;}
-  .gallery div img{width: 100%; height: auto; position:relative; }
+  
+  @media (max-width: 768px) {
+    .gallery div img{width: 100%; height: auto; position:relative; }
+    
+  }
 }
 .description {
   text-align: center;
