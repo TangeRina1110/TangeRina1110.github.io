@@ -16,9 +16,7 @@ a{
 	text-decoration: none;
 }
 li{
-	max-height: 30px;
-	max-width: 750px;
-	font-size: 24px;
+	text-decoration: none;
 	position: relative;
 }
 /*#showImgDiv{
@@ -268,18 +266,19 @@ body{
       .quicklinks li{
           list-style: none;
       }
-      .quicklinks li a h6{
+      .quicklinks li a{
           color: #f7f7f7;
           text-decoration: none;
           margin-bottom: 10px;
           display: inline-block;
       }
-      .quicklinks li a h6:hover
+      .quicklinks li a:hover
       {
           color: #ffeb3b;
       }
       .info
       {
+          margin-bottom: 10px;
           position: inherit;
       }
       .info li
